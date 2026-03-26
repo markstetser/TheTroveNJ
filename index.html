@@ -5,124 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Trove NJ | Premium TCG & Supplies</title>
     <style>
-        :root {
-            --gold: #c5a059;
-            --dark-bg: #0f141e;
-            --card-bg: #1a1f2c;
-            --text-light: #e0e6ed;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--dark-bg);
-            color: var(--text-light);
-            line-height: 1.6;
-        }
-
-        /* --- NAVIGATION --- */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 5%;
-            background: rgba(15, 20, 30, 0.95);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 1px solid var(--gold);
-        }
-
-        .logo {
-            font-size: 1.6rem;
-            font-weight: 800;
-            color: var(--gold);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        /* --- HERO SECTION --- */
-        .hero {
-            height: 50vh;
-            background: linear-gradient(rgba(15, 20, 30, 0.8), rgba(15, 20, 30, 0.8)), 
-                        url('https://images.unsplash.com/photo-1611891487122-207579d67d98?q=80&w=2070');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .btn {
-            background-color: var(--gold);
-            color: var(--dark-bg);
-            padding: 15px 35px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 4px;
-            text-transform: uppercase;
-            transition: 0.3s;
-        }
-
-        /* --- FEATURES --- */
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            padding: 60px 10%;
-            background-color: var(--card-bg);
-        }
-
-        .feature-card {
-            text-align: center;
-            padding: 30px;
-            border: 1px solid rgba(197, 160, 89, 0.2);
-        }
-
-        .feature-card h3 { color: var(--gold); }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-            font-size: 0.8rem;
-            background: var(--dark-bg);
-        }
+        :root { --gold: #c5a059; --dark: #0f141e; --card: #1a1f2c; --text: #e0e6ed; }
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background: var(--dark); color: var(--text); line-height: 1.6; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: rgba(15, 20, 30, 0.95); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid var(--gold); }
+        .logo { font-size: 1.6rem; font-weight: 800; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; }
+        .hero { height: 45vh; background: linear-gradient(rgba(15,20,30,0.8), rgba(15,20,30,0.8)), url('https://images.unsplash.com/photo-1611891487122-207579d67d98?q=80&w=2070'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
+        .btn { background: var(--gold); color: var(--dark); padding: 12px 30px; text-decoration: none; font-weight: bold; border-radius: 4px; text-transform: uppercase; transition: 0.3s; cursor: pointer; border: none; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 60px 10%; background: var(--card); }
+        .feature-card { text-align: center; padding: 30px; border: 1px solid rgba(197, 160, 89, 0.2); border-radius: 8px; }
+        .feature-card h3 { color: var(--gold); margin-top: 0; }
+        .inventory-preview { padding: 60px 10%; text-align: center; }
+        .stock-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px; opacity: 0.8; font-style: italic; }
+        footer { text-align: center; padding: 40px; font-size: 0.8rem; border-top: 1px solid rgba(255,255,255,0.1); }
     </style>
 </head>
 <body>
-
     <nav>
         <div class="logo">The Trove NJ</div>
-        <a href="https://www.tcgplayer.com/sellers/The-Trove-NJ/857b3bae/feedback" class="btn" style="padding: 10px 20px;">Storefront</a>
+        <a href="https://www.tcgplayer.com/sellers/The-Trove-NJ/857b3bae/feedback" class="btn">View Storefront</a>
     </nav>
-
     <section class="hero">
         <h1>Your Collection, Curated.</h1>
-        <p>Premium MTG Singles & Archival Grade BCW Supplies.</p>
-        <a href="https://www.tcgplayer.com/sellers/The-Trove-NJ/857b3bae/feedback" class="btn">Shop The Trove</a>
+        <p>Premium MTG Singles & Archival Grade BCW Supplies</p>
     </section>
-
     <section class="features">
         <div class="feature-card">
             <h3>Archival Grade</h3>
-            <p>Authorized BCW & Ultra Pro dealer. Professional protection for high-value cards.</p>
+            <p>Authorized BCW & Ultra Pro dealer. We provide the highest-tier protection for your investments.</p>
         </div>
         <div class="feature-card">
-            <h3>Strict Grading</h3>
-            <p>Specializing in Pioneer and Commander staples with honest, conservative grading.</p>
+            <h3>Expert Grading</h3>
+            <p>Specializing in Commander & Pioneer staples. Every card is handled with white-glove care in Mantua, NJ.</p>
         </div>
         <div class="feature-card">
-            <h3>Mantua, NJ</h3>
-            <p>Based in New Jersey. Fast, secure shipping in reinforced packaging.</p>
+            <h3>Secure Shipping</h3>
+            <p>Orders ship daily in reinforced, collector-safe packaging. We prioritize the safety of your mail day.</p>
         </div>
     </section>
-
+    <section class="inventory-preview">
+        <h3>Currently In The Trove</h3>
+        <p>Specializing in Commander Decks, Secret Lairs, and Premium Singles.</p>
+        <div class="stock-list">
+            <span>• Lost Caverns of Ixalan</span>
+            <span>• Edge of Eternities</span>
+            <span>• Universes Beyond: TMNT</span>
+            <span>• Premium Staples</span>
+        </div>
+        <br><br>
+        <a href="https://www.tcgplayer.com/sellers/The-Trove-NJ/857b3bae/feedback" class="btn">Shop New Arrivals</a>
+    </section>
     <footer>
-        <p>&copy; 2026 Tabletop Treasure Trove LLC. All Rights Reserved.</p>
+        <p>&copy; 2026 Tabletop Treasure Trove LLC. Based in Mantua, NJ.</p>
+        <p>The Trove NJ is an independent retailer and is not affiliated with Wizards of the Coast.</p>
     </footer>
-
 </body>
 </html>
